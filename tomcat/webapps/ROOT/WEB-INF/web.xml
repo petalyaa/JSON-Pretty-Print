@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	
+	<display-name>json-pretty-print</display-name>
+
+	<servlet>
+		<servlet-name>InputController</servlet-name>
+		<servlet-class>org.pet.jsonprettyprint.web.controller.InputController</servlet-class>
+		<init-param>
+			<param-name>page</param-name>
+			<param-value>/input.jsp</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InputController</servlet-name>
+		<url-pattern>/input</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>OutputController</servlet-name>
+		<servlet-class>org.pet.jsonprettyprint.web.controller.OutputController</servlet-class>
+		<init-param>
+			<param-name>page</param-name>
+			<param-value>/output.jsp</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OutputController</servlet-name>
+		<url-pattern>/output</url-pattern>
+	</servlet-mapping>
+
+
+	<context-param>
+		<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+		<param-value>messages</param-value>
+	</context-param>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

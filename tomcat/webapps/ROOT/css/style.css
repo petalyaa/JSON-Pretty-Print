@@ -1,0 +1,214 @@
+body {
+	margin-top : 10px;
+	color : #444;
+	font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+	overflow-y: scroll;
+}
+.json-key {
+	font-weight: 600;
+	color: #0088cc;
+}
+
+#debug-box {
+	padding-top: 35px;
+	margin-left: 15px;
+}
+
+.leaf {
+	padding-left: 5px !important;
+	margin-top : 0px !important;
+}
+
+.input-container {
+	position : fixed;
+	width : 460px;
+	margin-top : 110px;
+}
+
+.output-title {
+	position : fixed;
+	width : 450px;
+	margin-left: 480px;
+	padding : 15px 5px 5px 5px;
+	top : 0px;
+	z-index: 2;
+	background: #fff;
+	color : #1f8ce6;
+}
+
+.input-title {
+	position : fixed;
+	width : 450px;
+	padding : 15px 5px 5px 5px;
+	top : 0px;
+	z-index: 2;
+	color : #1f8ce6;
+	background: #fff;
+}
+
+.title-border-bottom {
+	margin-top : 5px;
+	width : 100%;
+	position : absolute;
+	height : 6px;
+	z-index : 5;
+	background : -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,0)));
+	-webkit-mask-box-image : -webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,.1)),color-stop(.5,rgba(0,0,0,.8)),color-stop(1,rgba(0,0,0,.1)));
+}
+
+.output-container {
+	position : relative;
+	width : 450px;
+	margin-left: 480px;
+	margin-top : 100px;
+	z-index: 1;
+	margin-bottom: 70px;
+}
+
+.footer {
+	z-index : 30;
+	background : #fff;
+	position : fixed;
+	display : block;
+	width : 100%;
+	bottom : 0px;
+	padding : 5px 5px 5px 5px;
+	border-top: 1px solid #82cffa;
+	background: #f0f9ff;
+	color: #1f8ce6;
+}
+
+.title-control-buttons {
+	border-top: 1px solid #82cffa;
+	border-bottom: 1px solid #96c4ea;
+	border-left : 1px solid #e7f2fb;
+	border-right : 1px solid #e7f2fb;
+	padding : 3px;
+	background: #f0f9ff;
+	-mox-box-shadow : 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
+	-webkit-box-shadow : 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
+	box-shadow : 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
+}
+
+h3 {
+	color: #1f8ce6;
+}
+
+.table-mod {
+	position : absolute;
+}
+
+.table-static-header {
+	position : fixed;
+	background: #f0f9ff;
+	border-left : 1px solid #e7f2fb;
+	border-right : 1px solid #e7f2fb;
+	color : #1155cc;
+	-webkit-box-shadow : 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
+	-mox-box-shadow : 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
+	box-shadow : 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
+	z-index: 50;
+}
+
+.table-static-header div[class^=column] {
+	float : left;
+	padding : 10px 5px 10px 5px;
+	font-size: 13;
+	cursor : default;
+}
+
+.no-data {
+	padding : 5px 10px 5px 10px;
+	background : white !important;
+	font-weight: bold;
+	padding-left: 30px;
+}
+
+.table-content {
+	margin-top: 45px;
+}
+
+.content-listing {
+	list-style: none;
+	margin-left: 0px;
+}
+
+.content-listing .content-row {
+	display : block;
+	width : 100%;
+	position : relative;
+	border-bottom: 1px solid rgb(237, 241, 245);
+}
+
+.content-listing .content-row:hover {
+	background-color: rgba(230,245,255,0.3);
+}
+
+.content-listing .active {
+	background-color : #388ec8 !important;
+	border-color: #83b8dc;
+	color : #fff;
+}
+
+.hoverJson {
+	cursor : default;
+}
+
+.output-container .path-box {
+	padding: 10px 5px 5px 20px;
+	margin-left : 5px;
+	border-bottom: 1px solid #96c4ea;
+	color : #1f8ce6;
+	background: #fff;
+	position : fixed;
+	width : 425px;
+	-webkit-box-shadow : 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
+	-mox-box-shadow : 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
+	box-shadow : 0 1px 1px rgba(0,0,0,0.12),inset 0 0 0 #000;
+}
+
+.path-box .path-label {
+	float : left;
+}
+
+.path-box .path-value {
+	float : left;
+	padding-left: 5px;
+}
+
+.content-listing li div[class^=column] {
+	float : left;
+	padding : 10px 5px 10px 5px;
+	z-index: 1;
+	cursor : default;
+	display : block;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.column-name {
+	width : 170px;
+}
+
+.column-created-date {
+	width : 160px;
+}
+
+.column-size {
+	width : 140px;
+}
+
+.column-content-name {
+	width : 170px;
+}
+
+.column-content-created-date {
+	width : 160px;
+}
+
+.column-content-size {
+	width : 140px;
+	text-align: center;
+}
